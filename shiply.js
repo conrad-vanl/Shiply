@@ -1,4 +1,3 @@
-// Shiply
 // "Same as Billing/Shipping Info" Plugin
 
 // Pass the ID of the checkbox that toggles the copy
@@ -14,7 +13,7 @@
 			return this.each(function() {
 				var obj = $(this);
 				form = obj.parents('form');
-				objs = form.find('input[id^="'+prepend+'"]');
+				objs = form.find('[id^="'+prepend+'"]');
 				
 				// Add listener for checkbox: disable all elements and copy data
 				obj.bind('change', function() {
