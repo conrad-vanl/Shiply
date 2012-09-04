@@ -11,13 +11,17 @@ A simple jQuery plugin that allows you to automatically copy the data of repeate
 ### How to use:
 
 HTML:
-	<input type="text" id="address">
-	<input type="checkbox" id="toggleShiply">
-	<input type="text" id="billing-address">
+```html
+<input type="text" id="address">
+<input type="checkbox" id="toggleShiply">
+<input type="text" id="billing-address">
+```
 
 JS:
-	// On the checkbox $() element, call the shiply function with the namespace prefix you'd like to use:
-	$('#toggleShiply').shiply("billing-");
+```javascript
+   // On the checkbox $() element, call the shiply function with the namespace prefix you'd like to use:
+   $('#toggleShiply').shiply("billing-");
+```
 
 That's it!
 
