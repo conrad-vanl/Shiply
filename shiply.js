@@ -13,7 +13,7 @@
 			return this.each(function() {
 				var obj = $(this);
 				form = obj.parents('form');
-				objs = form.find('[id^="'+prepend+'"]');
+				objs = form.find('input[id^="'+prepend+'"]');
 				
 				// Add listener for checkbox: disable all elements and copy data
 				obj.bind('change', function() {
@@ -43,7 +43,6 @@
 							id = $this.attr('id').substr(prepend.length);
 							form.prepend('<input type="hidden" name="'+$this.attr('id')+'" value="'+form.find("#"+id).val()+'">');
 						});
-						console.log(form);
 					}
 				});	
 				
