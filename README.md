@@ -19,8 +19,8 @@ HTML:
 
 JS:
 ```javascript
-   // On the checkbox $() element, call the shiply function with the namespace prefix you'd like to use:
-   $('#toggleShiply').shiply("billing-");
+// On the checkbox $() element, call the shiply function with the namespace prefix you'd like to use:
+$('#toggleShiply').shiply("billing-");
 ```
 
 That's it!
